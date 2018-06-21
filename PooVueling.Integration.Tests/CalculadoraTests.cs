@@ -44,5 +44,38 @@ namespace PooVueling.Tests
 		{
 			Assert.IsTrue(iCalculadora.Suma(num1,num2) == resultado);
 		}
+
+		[DataRow(44D, 11D, 4D)]
+		[DataRow(99D, 3D, 33D)]
+		[DataTestMethod]
+		public void DivisionDoubleTest(double num1, double num2, double resultado)
+		{
+			Assert.IsTrue(iCalculadora.Division(num1,num2) == resultado);
+		}
+
+		[DataRow(4D, 2D, 8D)]
+		[DataRow(9D, 3D, 27D)]
+		[DataTestMethod]
+		public void MultiplicacionDoubleTest(double num1, double num2, double resultado)
+		{
+			Assert.IsTrue(iCalculadora.Multiplicacion(num1,num2) == resultado);
+		}
+
+		[DataRow(4D, 2D, 2D)]
+		[DataRow(9D, 3D, 6D)]
+		[DataTestMethod]
+		public void RestaDoubleTest(double num1, double num2, double resultado)
+		{
+			Assert.IsTrue(iCalculadora.Resta(num1,num2) == resultado);
+		}
+
+		[DataRow(4D, 2D, 6D)]
+		[DataRow(9D, 3D, 12D)]
+		[DataTestMethod]
+		public void SumaDoubleTest(double num1, double num2, double resultado)
+		{
+			Assert.IsTrue(iCalculadora.Suma(num1,num2) == resultado);
+		}
+
 	}
 }
